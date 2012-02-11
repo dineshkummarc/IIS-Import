@@ -1,0 +1,6 @@
+O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\bin\Release\iisimport.exe.config
+O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\bin\Release\iisimport.exe
+O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\bin\Release\iisimport.pdb
+O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\obj\x86\Release\ResolveAssemblyReference.cache
+O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\obj\x86\Release\iisimport.exe
+O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\obj\x86\Release\iisimport.pdb

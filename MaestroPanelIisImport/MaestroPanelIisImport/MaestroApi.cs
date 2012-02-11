@@ -46,12 +46,37 @@
 
             return SendApi("Domain/Stop", "POST", _args);
         }
-        
+
+        //from http://www.c-sharpcorner.com/uploadfile/niradhip/automatic-password-generator-in-C-Sharp/
         public string GeneratePassword(int Length)
         {
-            return System.Web.Security.Membership.GeneratePassword(8, 2);
+            Random random = new Random();
+            string password = HashData(random.Next().ToString()).Substring(0, Length);
+            string newPass = "";
+
+            // Uppercase at random
+            random = new Random();
+            for (int i = 0; i < password.Length; i++)
+            {
+                if (random.Next(0, 2) == 1)
+                    newPass += password.Substring(i, 1).ToUpper();
+                else
+                    newPass += password.Substring(i, 1);
+            }
+            return newPass;
         }
 
+        private string HashData(string Data)
+        {
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] hash = md5.ComputeHash(Encoding.ASCII.GetBytes(Data));
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (byte b in hash)
+            {
+                stringBuilder.AppendFormat("{0:x2}", b);
+            }
+            return stringBuilder.ToString();
+        }
 
         public ApiResult DomainCreate(string name, string planAlias, string username, string password, bool activedomainuser)
         {            
@@ -75,7 +100,7 @@
             {
                 HttpWebRequest request = WebRequest.Create(_uri) as HttpWebRequest;
                 request.Method = method;
-                request.Timeout = 60 * 1000;
+                request.Timeout = 8 * 1000; //8 seconds                
                 request.ContentType = "application/x-www-form-urlencoded";
 
                 WriteData(ref request, _parameters);

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaestroPanelIisImport", "MaestroPanelIisImport\MaestroPanelIisImport.csproj", "{67694B33-CD22-4D84-A325-23085E41F7F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{04A3A644-E451-4DA6-99D8-901763E23249}"
+	ProjectSection(SolutionItems) = preProject
+		MaestroPanelIisImport\Microsoft.Web.Administration.dll = MaestroPanelIisImport\Microsoft.Web.Administration.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67694B33-CD22-4D84-A325-23085E41F7F0}.Debug|x86.ActiveCfg = Debug|x86
+		{67694B33-CD22-4D84-A325-23085E41F7F0}.Debug|x86.Build.0 = Debug|x86
+		{67694B33-CD22-4D84-A325-23085E41F7F0}.Release|x86.ActiveCfg = Release|x86
+		{67694B33-CD22-4D84-A325-23085E41F7F0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
