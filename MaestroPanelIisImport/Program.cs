@@ -94,6 +94,7 @@
                 {
                     _password = _api.GeneratePassword(8);
                     _result = _api.DomainCreate(item.Name, api_plan_alias, item.Name, _password, false);
+                    //_result = _api.DomainDelete(item.Name);
                     _sb.AppendFormat("{0}\t{1}\t{2}\t{3}\t{4}\t{5}{6}", item.Name, api_plan_alias, item.Name, _password, _result.Code, _result.Message, Environment.NewLine);
 
                     Console.WriteLine("{0}\t{1}",item.Name, _result.Message);

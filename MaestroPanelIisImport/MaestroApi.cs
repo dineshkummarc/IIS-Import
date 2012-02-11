@@ -4,7 +4,6 @@
     using System.Collections.Specialized;
     using System.IO;
     using System.Net;
-    using System.Security.Cryptography;
     using System.Text;
     using System.Web;
 
@@ -28,7 +27,6 @@
             return SendApi("Domain/Delete", "DELETE", _args);
         }
         
-
         public ApiResult DomainStart(string name)
         {
             var _args = new NameValueCollection();
@@ -51,7 +49,6 @@
         {
             return System.Web.Security.Membership.GeneratePassword(8, 2);
         }
-
 
         public ApiResult DomainCreate(string name, string planAlias, string username, string password, bool activedomainuser)
         {            
