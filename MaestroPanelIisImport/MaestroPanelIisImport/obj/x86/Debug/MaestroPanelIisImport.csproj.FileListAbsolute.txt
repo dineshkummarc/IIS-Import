@@ -1,6 +1,0 @@
-O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\obj\x86\Debug\ResolveAssemblyReference.cache
-O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\bin\Debug\iisimport.exe.config
-O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\bin\Debug\iisimport.exe
-O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\bin\Debug\iisimport.pdb
-O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\obj\x86\Debug\iisimport.exe
-O:\Projects\MaestroPanelIisImport\MaestroPanelIisImport\obj\x86\Debug\iisimport.pdb
